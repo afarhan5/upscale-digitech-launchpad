@@ -59,7 +59,7 @@ const Index = () => {
 
   const benefits = [
     { icon: TrendingUp, title: "Proven ROI", text: "Average 300% increase in client revenue" },
-    { icon: Award, title: "10+ Years Experience", text: "Industry-leading expertise and results" },
+    { icon: Award, title: "5+ Years Experience", text: "Industry-leading expertise and results" },
     { icon: Clock, title: "24/7 Support", text: "Always here when you need us" },
     { icon: HeadphonesIcon, title: "Affordable Pricing", text: "Premium services at competitive rates" },
   ];
