@@ -194,9 +194,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-muted-foreground">
-                      123 Business Ave, Suite 100<br />
-                      New York, NY 10001<br />
-                      United States
+                      Okhla NSIC, New Delhi<br />
+                      India
                     </p>
                   </div>
                 </div>

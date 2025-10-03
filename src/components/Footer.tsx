@@ -73,8 +73,8 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-primary mt-1 flex-shrink-0" />
                 <span className="text-gray-400">
-                  123 Business Ave, Suite 100<br />
-                  New York, NY 10001
+                  Okhla NSIC, New Delhi<br />
+                  India
                 </span>
               </li>
             </ul>
