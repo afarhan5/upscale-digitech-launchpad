@@ -7,32 +7,35 @@ import { Phone, Mail, MapPin, Send, MessageCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     service: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
+      description: "We'll get back to you within 24 hours."
     });
-    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      message: ""
+    });
   };
-
   const handleWhatsApp = () => {
     window.open("https://wa.me/15551234567?text=Hi! I'd like to know more about your digital marketing services.", "_blank");
   };
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section */}
@@ -59,55 +62,40 @@ const Contact = () => {
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
                     Full Name *
                   </label>
-                  <Input
-                    id="name"
-                    type="text"
-                    placeholder="John Doe"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="w-full"
-                  />
+                  <Input id="name" type="text" placeholder="John Doe" value={formData.name} onChange={e => setFormData({
+                  ...formData,
+                  name: e.target.value
+                })} required className="w-full" />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
                     Email Address *
                   </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="john@example.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="w-full"
-                  />
+                  <Input id="email" type="email" placeholder="john@example.com" value={formData.email} onChange={e => setFormData({
+                  ...formData,
+                  email: e.target.value
+                })} required className="w-full" />
                 </div>
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium mb-2">
                     Phone Number *
                   </label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="+1 (555) 123-4567"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    required
-                    className="w-full"
-                  />
+                  <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" value={formData.phone} onChange={e => setFormData({
+                  ...formData,
+                  phone: e.target.value
+                })} required className="w-full" />
                 </div>
 
                 <div>
                   <label htmlFor="service" className="block text-sm font-medium mb-2">
                     Service Interested In *
                   </label>
-                  <Select
-                    value={formData.service}
-                    onValueChange={(value) => setFormData({ ...formData, service: value })}
-                  >
+                  <Select value={formData.service} onValueChange={value => setFormData({
+                  ...formData,
+                  service: value
+                })}>
                     <SelectTrigger className="w-full">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
@@ -126,15 +114,10 @@ const Contact = () => {
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
                     Your Message *
                   </label>
-                  <Textarea
-                    id="message"
-                    placeholder="Tell us about your project..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={5}
-                    className="w-full"
-                  />
+                  <Textarea id="message" placeholder="Tell us about your project..." value={formData.message} onChange={e => setFormData({
+                  ...formData,
+                  message: e.target.value
+                })} required rows={5} className="w-full" />
                 </div>
 
                 <Button type="submit" size="lg" className="btn-gradient w-full">
@@ -145,13 +128,7 @@ const Contact = () => {
 
               {/* WhatsApp Button */}
               <div className="mt-6">
-                <Button
-                  type="button"
-                  onClick={handleWhatsApp}
-                  size="lg"
-                  variant="outline"
-                  className="w-full border-2 border-primary hover:bg-primary hover:text-white"
-                >
+                <Button type="button" onClick={handleWhatsApp} size="lg" variant="outline" className="w-full border-2 border-primary hover:bg-primary hover:text-white">
                   <MessageCircle className="mr-2" size={20} />
                   Chat on WhatsApp
                 </Button>
@@ -169,9 +146,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <a href="tel:+15551234567" className="text-muted-foreground hover:text-primary">
-                      +1 (555) 123-4567
-                    </a>
+                    <a href="tel:+15551234567" className="text-muted-foreground hover:text-primary">+91 9631881743</a>
                   </div>
                 </div>
 
@@ -213,16 +188,9 @@ const Contact = () => {
 
               {/* Map Placeholder */}
               <div className="bg-muted rounded-2xl overflow-hidden h-64">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Office Location"
-                />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" width="100%" height="100%" style={{
+                border: 0
+              }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Office Location" />
               </div>
             </div>
           </div>
@@ -254,8 +222,6 @@ const Contact = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
