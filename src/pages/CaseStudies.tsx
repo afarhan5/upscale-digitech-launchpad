@@ -3,58 +3,84 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, ArrowRight, Users, DollarSign, BarChart } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-
 const CaseStudies = () => {
-  const caseStudies = [
-    {
-      company: "TechStart Inc.",
-      industry: "SaaS Technology",
-      challenge: "Low organic traffic and minimal online visibility in a competitive market.",
-      solution: "Implemented comprehensive SEO strategy with technical optimization, content marketing, and link building campaigns.",
-      results: [
-        { metric: "Organic Traffic", increase: "250%", icon: TrendingUp },
-        { metric: "Keyword Rankings", increase: "180%", icon: BarChart },
-        { metric: "Lead Generation", increase: "320%", icon: Users },
-        { metric: "Revenue Growth", increase: "400%", icon: DollarSign },
-      ],
-      duration: "6 months",
-      testimonial: "Upscale DigiTech transformed our online presence completely. The results speak for themselves!",
-      author: "Sarah Johnson, CEO",
-    },
-    {
-      company: "GrowthLabs",
-      industry: "E-commerce",
-      challenge: "High PPC costs with low conversion rates and poor ROI on advertising spend.",
-      solution: "Redesigned PPC campaigns with better targeting, optimized landing pages, and implemented conversion rate optimization strategies.",
-      results: [
-        { metric: "Cost Per Click", increase: "-45%", icon: DollarSign },
-        { metric: "Conversion Rate", increase: "210%", icon: TrendingUp },
-        { metric: "ROAS", increase: "380%", icon: BarChart },
-        { metric: "Monthly Sales", increase: "290%", icon: DollarSign },
-      ],
-      duration: "4 months",
-      testimonial: "Our ROI skyrocketed after partnering with this team. Best decision we ever made!",
-      author: "Michael Chen, Marketing Director",
-    },
-    {
-      company: "StyleCraft Co.",
-      industry: "Fashion & Lifestyle",
-      challenge: "Limited social media engagement and brand awareness in a crowded market.",
-      solution: "Developed comprehensive social media strategy with influencer partnerships, engaging content, and paid social campaigns.",
-      results: [
-        { metric: "Social Following", increase: "450%", icon: Users },
-        { metric: "Engagement Rate", increase: "380%", icon: TrendingUp },
-        { metric: "Website Traffic", increase: "290%", icon: BarChart },
-        { metric: "Online Sales", increase: "340%", icon: DollarSign },
-      ],
-      duration: "8 months",
-      testimonial: "They understood our brand perfectly and helped us reach audiences we never thought possible.",
-      author: "Emma Williams, Founder",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const caseStudies = [{
+    company: "TechStart Inc.",
+    industry: "SaaS Technology",
+    challenge: "Low organic traffic and minimal online visibility in a competitive market.",
+    solution: "Implemented comprehensive SEO strategy with technical optimization, content marketing, and link building campaigns.",
+    results: [{
+      metric: "Organic Traffic",
+      increase: "250%",
+      icon: TrendingUp
+    }, {
+      metric: "Keyword Rankings",
+      increase: "180%",
+      icon: BarChart
+    }, {
+      metric: "Lead Generation",
+      increase: "320%",
+      icon: Users
+    }, {
+      metric: "Revenue Growth",
+      increase: "400%",
+      icon: DollarSign
+    }],
+    duration: "6 months",
+    testimonial: "Upscale DigiTech transformed our online presence completely. The results speak for themselves!",
+    author: "Sarah Johnson, CEO"
+  }, {
+    company: "GrowthLabs",
+    industry: "E-commerce",
+    challenge: "High PPC costs with low conversion rates and poor ROI on advertising spend.",
+    solution: "Redesigned PPC campaigns with better targeting, optimized landing pages, and implemented conversion rate optimization strategies.",
+    results: [{
+      metric: "Cost Per Click",
+      increase: "-45%",
+      icon: DollarSign
+    }, {
+      metric: "Conversion Rate",
+      increase: "210%",
+      icon: TrendingUp
+    }, {
+      metric: "ROAS",
+      increase: "380%",
+      icon: BarChart
+    }, {
+      metric: "Monthly Sales",
+      increase: "290%",
+      icon: DollarSign
+    }],
+    duration: "4 months",
+    testimonial: "Our ROI skyrocketed after partnering with this team. Best decision we ever made!",
+    author: "Michael Chen, Marketing Director"
+  }, {
+    company: "StyleCraft Co.",
+    industry: "Fashion & Lifestyle",
+    challenge: "Limited social media engagement and brand awareness in a crowded market.",
+    solution: "Developed comprehensive social media strategy with influencer partnerships, engaging content, and paid social campaigns.",
+    results: [{
+      metric: "Social Following",
+      increase: "450%",
+      icon: Users
+    }, {
+      metric: "Engagement Rate",
+      increase: "380%",
+      icon: TrendingUp
+    }, {
+      metric: "Website Traffic",
+      increase: "290%",
+      icon: BarChart
+    }, {
+      metric: "Online Sales",
+      increase: "340%",
+      icon: DollarSign
+    }],
+    duration: "8 months",
+    testimonial: "They understood our brand perfectly and helped us reach audiences we never thought possible.",
+    author: "Emma Williams, Founder"
+  }];
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section */}
@@ -73,8 +99,7 @@ const CaseStudies = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="space-y-20">
-            {caseStudies.map((study, index) => (
-              <Card key={index} className="border-0 shadow-2xl overflow-hidden">
+            {caseStudies.map((study, index) => <Card key={index} className="border-0 shadow-2xl overflow-hidden">
                 <CardContent className="p-0">
                   <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Left Side - Details */}
@@ -83,9 +108,7 @@ const CaseStudies = () => {
                         <span className="text-sm font-semibold text-primary uppercase tracking-wider">
                           {study.industry}
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 font-poppins">
-                          {study.company}
-                        </h2>
+                        
                         <p className="text-muted-foreground">Duration: {study.duration}</p>
                       </div>
 
@@ -111,8 +134,7 @@ const CaseStudies = () => {
                     <div className="p-8 lg:p-12 bg-gradient-to-br from-primary/5 to-accent/5">
                       <h3 className="text-2xl font-bold mb-8 font-poppins">Results Achieved</h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        {study.results.map((result, rIndex) => (
-                          <div key={rIndex} className="bg-white rounded-xl p-6 shadow-md card-hover">
+                        {study.results.map((result, rIndex) => <div key={rIndex} className="bg-white rounded-xl p-6 shadow-md card-hover">
                             <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center mb-4">
                               <result.icon className="text-white" size={24} />
                             </div>
@@ -122,14 +144,12 @@ const CaseStudies = () => {
                             <p className="text-sm text-muted-foreground font-medium">
                               {result.metric}
                             </p>
-                          </div>
-                        ))}
+                          </div>)}
                       </div>
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -179,8 +199,6 @@ const CaseStudies = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default CaseStudies;
