@@ -3,33 +3,25 @@ import { Target, Users, Zap, Award, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import aboutImage from "@/assets/about-team.jpg";
-
 const About = () => {
-  const values = [
-    {
-      icon: Target,
-      title: "Results-Driven",
-      description: "We focus on delivering measurable ROI and tangible business growth for every client.",
-    },
-    {
-      icon: Users,
-      title: "Client-Centric",
-      description: "Your success is our success. We build long-term partnerships based on trust and transparency.",
-    },
-    {
-      icon: Zap,
-      title: "Innovation First",
-      description: "We stay ahead of digital trends to keep your business competitive in the evolving market.",
-    },
-    {
-      icon: Award,
-      title: "Excellence Always",
-      description: "Quality is non-negotiable. We deliver premium services that exceed expectations.",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const values = [{
+    icon: Target,
+    title: "Results-Driven",
+    description: "We focus on delivering measurable ROI and tangible business growth for every client."
+  }, {
+    icon: Users,
+    title: "Client-Centric",
+    description: "Your success is our success. We build long-term partnerships based on trust and transparency."
+  }, {
+    icon: Zap,
+    title: "Innovation First",
+    description: "We stay ahead of digital trends to keep your business competitive in the evolving market."
+  }, {
+    icon: Award,
+    title: "Excellence Always",
+    description: "Quality is non-negotiable. We deliver premium services that exceed expectations."
+  }];
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section */}
@@ -53,20 +45,13 @@ const About = () => {
               <p className="text-lg text-muted-foreground mb-4">
                 Founded in 2014, Upscale DigiTech began with a simple mission: to help businesses thrive in the digital age. What started as a small team of passionate marketers has grown into a full-service digital marketing agency serving clients worldwide.
               </p>
-              <p className="text-lg text-muted-foreground mb-4">
-                With over 10 years of experience, we've helped hundreds of businesses achieve their online goals through innovative strategies and data-driven campaigns. Our team of certified experts specializes in SEO, PPC, social media marketing, web development, and content creation.
-              </p>
+              <p className="text-lg text-muted-foreground mb-4">With over 5 years of experience, we've helped hundreds of businesses achieve their online goals through innovative strategies and data-driven campaigns. Our team of certified experts specializes in SEO, PPC, social media marketing, web development, and content creation.</p>
               <p className="text-lg text-muted-foreground mb-6">
                 We believe in building lasting relationships with our clients, understanding their unique challenges, and delivering customized solutions that drive real results. Every strategy we create is backed by research, analytics, and a commitment to excellence.
               </p>
             </div>
             <div>
-              <img 
-                src={aboutImage} 
-                alt="Upscale DigiTech Team" 
-                className="rounded-2xl shadow-2xl"
-                loading="lazy"
-              />
+              <img src={aboutImage} alt="Upscale DigiTech Team" className="rounded-2xl shadow-2xl" loading="lazy" />
             </div>
           </div>
         </div>
@@ -102,15 +87,13 @@ const About = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <div key={index} className="text-center card-hover p-6 rounded-xl bg-card shadow-md">
+            {values.map((value, index) => <div key={index} className="text-center card-hover p-6 rounded-xl bg-card shadow-md">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <value.icon className="text-white" size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 font-poppins">{value.title}</h3>
                 <p className="text-muted-foreground">{value.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -158,8 +141,6 @@ const About = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
