@@ -38,13 +38,13 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Rajesh Sharma",
       company: "TechStart Inc.",
       text: "Upscale DigiTech transformed our online presence. Our traffic increased by 250% in just 6 months!",
       rating: 5,
     },
     {
-      name: "Michael Chen",
+      name: "Priya Patel",
       company: "GrowthLabs",
       text: "Outstanding ROI on our PPC campaigns. The team is professional, responsive, and truly understands digital marketing.",
       rating: 5,
