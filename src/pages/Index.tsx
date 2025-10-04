@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Award, Clock, HeadphonesIcon, Search, MousePointer, Share2, Code, Megaphone } from "lucide-react";
@@ -17,6 +18,10 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
+  const autoplayPlugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
+
   const services = [
     {
       icon: Search,
@@ -175,11 +180,7 @@ const Index = () => {
                 align: "start",
                 loop: true,
               }}
-              plugins={[
-                Autoplay({
-                  delay: 5000,
-                }),
-              ]}
+              plugins={[autoplayPlugin.current]}
               className="w-full"
             >
               <CarouselContent>
