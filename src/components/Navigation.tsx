@@ -22,6 +22,7 @@ const Navigation = () => {
     { name: "Services", path: "/services" },
     { name: "Case Studies", path: "/case-studies" },
     { name: "Blog", path: "/blog" },
+    { name: "Shop", path: "/shop" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -59,9 +60,11 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Button size="sm" className="btn-gradient">
-              Get Free Consultation
-            </Button>
+            <Link to="/contact">
+              <Button size="sm" className="btn-gradient">
+                Get Free Consultation
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,9 +94,11 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Button size="sm" className="btn-gradient w-full mt-4">
-              Get Free Consultation
-            </Button>
+            <Link to="/contact">
+              <Button size="sm" className="btn-gradient w-full mt-4">
+                Get Free Consultation
+              </Button>
+            </Link>
           </div>
         )}
       </div>

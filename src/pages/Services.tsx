@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Search, MousePointer, Share2, Code, Megaphone, ArrowRight, Check } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -101,10 +102,12 @@ const Services = () => {
                   </div>
                   <h2 className="text-4xl font-bold mb-4 font-poppins">{service.title}</h2>
                   <p className="text-lg text-muted-foreground mb-6">{service.description}</p>
-                  <Button size="lg" className="btn-gradient">
-                    Learn More
-                    <ArrowRight className="ml-2" size={20} />
-                  </Button>
+                  <Link to={`/services/${service.title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}>
+                    <Button size="lg" className="btn-gradient">
+                      Learn More
+                      <ArrowRight className="ml-2" size={20} />
+                    </Button>
+                  </Link>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                   <div className="bg-card shadow-lg rounded-2xl p-8 border">
@@ -161,10 +164,12 @@ const Services = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Let's discuss which services are right for your business. Get your free consultation today!
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
-            Contact Us Now
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
+          <Link to="/contact">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+              Contact Us Now
+              <ArrowRight className="ml-2" size={20} />
+            </Button>
+          </Link>
         </div>
       </section>
 

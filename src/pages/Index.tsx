@@ -5,7 +5,16 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
+import FreeAuditForm from "@/components/FreeAuditForm";
 import heroImage from "@/assets/hero-bg.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   const services = [
@@ -87,13 +96,17 @@ const Index = () => {
               We are a results-driven Digital Marketing Agency specializing in SEO, PPC, Social Media, and Web Development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
-                Get Free Consultation
-                <ArrowRight className="ml-2" size={20} />
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8">
-                See Our Services
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+                  Get Free Consultation
+                  <ArrowRight className="ml-2" size={20} />
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8">
+                  See Our Services
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -156,13 +169,37 @@ const Index = () => {
               Don't just take our word for it - hear from our satisfied clients
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} />
-            ))}
+          <div className="max-w-5xl mx-auto">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 5000,
+                }),
+              ]}
+              className="w-full"
+            >
+              <CarouselContent>
+                {testimonials.map((testimonial, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-2">
+                      <TestimonialCard {...testimonial} />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
+
+      {/* Free Audit Form */}
+      <FreeAuditForm />
 
       {/* Final CTA */}
       <section className="py-20 section-gradient text-white">
