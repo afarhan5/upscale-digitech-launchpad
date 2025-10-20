@@ -29,7 +29,7 @@ const CaseStudies = () => {
     }],
     duration: "6 months",
     testimonial: "Upscale DigiTech transformed our online presence completely. The results speak for themselves!",
-    author: "Sarah Johnson, CEO"
+    author: "Rajesh Sharma, CEO"
   }, {
     company: "GrowthLabs",
     industry: "E-commerce",
@@ -54,7 +54,7 @@ const CaseStudies = () => {
     }],
     duration: "4 months",
     testimonial: "Our ROI skyrocketed after partnering with this team. Best decision we ever made!",
-    author: "Michael Chen, Marketing Director"
+    author: "Rajesh Sharma, Marketing Director"
   }, {
     company: "StyleCraft Co.",
     industry: "Fashion & Lifestyle",
@@ -79,7 +79,7 @@ const CaseStudies = () => {
     }],
     duration: "8 months",
     testimonial: "They understood our brand perfectly and helped us reach audiences we never thought possible.",
-    author: "Emma Williams, Founder"
+    author: "Rajesh Sharma, Founder"
   }];
   return <div className="min-h-screen">
       <Navigation />
