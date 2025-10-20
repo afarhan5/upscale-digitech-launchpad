@@ -3,6 +3,7 @@ import { Target, Users, Zap, Award, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import aboutImage from "@/assets/about-team.jpg";
+import { Link } from "react-router-dom";
 const About = () => {
   const values = [{
     icon: Target,
@@ -131,10 +132,12 @@ const About = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Ready to take your digital marketing to the next level? Let's discuss how we can help your business grow.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
-            Get Started Today
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
+          <Link to="/contact">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+              Get Started Today
+              <ArrowRight className="ml-2" size={20} />
+            </Button>
+          </Link>
         </div>
       </section>
 

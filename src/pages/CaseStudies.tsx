@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, ArrowRight, Users, DollarSign, BarChart } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 const CaseStudies = () => {
   const caseStudies = [{
     company: "TechStart Inc.",
@@ -191,10 +192,12 @@ const CaseStudies = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Let's discuss how we can help your business achieve similar results. Get started today!
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
-            Get Free Consultation
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
+          <Link to="/contact">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+              Get Free Consultation
+              <ArrowRight className="ml-2" size={20} />
+            </Button>
+          </Link>
         </div>
       </section>
 

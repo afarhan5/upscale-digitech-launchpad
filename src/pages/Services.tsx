@@ -102,7 +102,13 @@ const Services = () => {
                   </div>
                   <h2 className="text-4xl font-bold mb-4 font-poppins">{service.title}</h2>
                   <p className="text-lg text-muted-foreground mb-6">{service.description}</p>
-                  <Link to={`/services/${service.title.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}>
+                  <Link to={`/services/${
+                    service.title === "SEO Services" ? "seo" :
+                    service.title === "PPC & Google Ads" ? "ppc" :
+                    service.title === "Social Media Marketing" ? "social-media" :
+                    service.title === "Website Development" ? "web-development" :
+                    "content-branding"
+                  }`}>
                     <Button size="lg" className="btn-gradient">
                       Learn More
                       <ArrowRight className="ml-2" size={20} />

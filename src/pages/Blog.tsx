@@ -1,10 +1,20 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
+import { Calendar, Clock, ArrowRight, Search, X } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const Blog = () => {
+  const [selectedPost, setSelectedPost] = useState<typeof blogPosts[0] | null>(null);
+  
   const blogPosts = [
     {
       title: "Top 10 SEO Trends in 2025",
@@ -129,7 +139,11 @@ const Blog = () => {
                       {post.readTime}
                     </div>
                   </div>
-                  <Button variant="outline" className="w-full group">
+                  <Button 
+                    variant="outline" 
+                    className="w-full group"
+                    onClick={() => setSelectedPost(post)}
+                  >
                     Read More
                     <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -179,12 +193,65 @@ const Blog = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Let our experts handle your digital marketing while you focus on running your business.
           </p>
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
-            Get Free Consultation
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
+          <Link to="/contact">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+              Get Free Consultation
+              <ArrowRight className="ml-2" size={20} />
+            </Button>
+          </Link>
         </div>
       </section>
+
+      {/* Blog Post Dialog */}
+      <Dialog open={!!selectedPost} onOpenChange={() => setSelectedPost(null)}>
+        <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+          {selectedPost && (
+            <>
+              <DialogHeader>
+                <DialogTitle className="text-3xl font-bold font-poppins pr-8">
+                  {selectedPost.title}
+                </DialogTitle>
+              </DialogHeader>
+              <div className="space-y-6">
+                <img
+                  src={selectedPost.image}
+                  alt={selectedPost.title}
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full">
+                    {selectedPost.category}
+                  </span>
+                  <div className="flex items-center">
+                    <Calendar size={16} className="mr-2" />
+                    {selectedPost.date}
+                  </div>
+                  <div className="flex items-center">
+                    <Clock size={16} className="mr-2" />
+                    {selectedPost.readTime}
+                  </div>
+                </div>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    {selectedPost.excerpt}
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mt-4">
+                    This is where the full blog post content would appear. In a complete implementation, 
+                    you would have the full article content stored in your data structure and rendered here. 
+                    You can include headings, paragraphs, images, code blocks, and other rich content to 
+                    provide value to your readers.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mt-4">
+                    For now, this serves as a placeholder to demonstrate the expandable blog post functionality. 
+                    Each blog post can have its own unique content, formatting, and media to engage your audience 
+                    and establish your authority in digital marketing.
+                  </p>
+                </div>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
 
       <Footer />
     </div>

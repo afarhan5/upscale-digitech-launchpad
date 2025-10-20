@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
-import FreeAuditForm from "@/components/FreeAuditForm";
+
 import heroImage from "@/assets/hero-bg.jpg";
 import {
   Carousel,
@@ -199,8 +199,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Free Audit Form */}
-      <FreeAuditForm />
 
       {/* Final CTA */}
       <section className="py-20 section-gradient text-white">
