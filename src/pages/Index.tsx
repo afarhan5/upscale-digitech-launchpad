@@ -87,7 +87,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(135deg, rgba(59, 130, 246, 0.6), rgba(147, 51, 234, 0.5)), url(${heroImage})`,
+            backgroundImage: `linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(147, 51, 234, 0.9)), url(${heroImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
