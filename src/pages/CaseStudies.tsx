@@ -54,7 +54,7 @@ const CaseStudies = () => {
     }],
     duration: "4 months",
     testimonial: "Our ROI skyrocketed after partnering with this team. Best decision we ever made!",
-    author: "Rajesh Sharma, Marketing Director"
+    author: "Priya Patel, Marketing Director"
   }, {
     company: "StyleCraft Co.",
     industry: "Fashion & Lifestyle",
@@ -79,7 +79,7 @@ const CaseStudies = () => {
     }],
     duration: "8 months",
     testimonial: "They understood our brand perfectly and helped us reach audiences we never thought possible.",
-    author: "Rajesh Sharma, Founder"
+    author: "Emma Williams, Founder"
   }];
   return <div className="min-h-screen">
       <Navigation />
