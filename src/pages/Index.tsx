@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "@/assets/digital-marketing-hero.jpg";
 import {
   Carousel,
   CarouselContent,
