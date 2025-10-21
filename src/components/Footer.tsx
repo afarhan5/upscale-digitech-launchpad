@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-slate-900 text-white pt-16 pb-8">
@@ -7,11 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">UD</span>
-              </div>
-              <span className="text-xl font-bold font-poppins">Upscale DigiTech</span>
+            <div className="mb-4">
+              <img 
+                src={logo} 
+                alt="Upscale Digitech - Digital Marketing Agency" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-400 mb-4">
               Results-driven Digital Marketing Agency specializing in SEO, PPC, Social Media, and Web Development.
