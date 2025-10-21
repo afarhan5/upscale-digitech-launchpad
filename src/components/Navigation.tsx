@@ -40,7 +40,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="Upscale Digitech - Digital Marketing Agency" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
