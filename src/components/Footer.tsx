@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="Upscale Digitech - Digital Marketing Agency" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-4">
