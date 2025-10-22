@@ -11,8 +11,8 @@ const Footer = () => {
             <div className="mb-4">
               <img 
                 src={logo} 
-                alt="Upscale DigiTech Logo" 
-                className="h-8 sm:h-10 w-auto"
+                alt="Upscale DigiTech - Digital Marketing Agency" 
+                className="h-10 sm:h-12 md:h-14 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-4">

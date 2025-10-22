@@ -39,8 +39,8 @@ const Navigation = () => {
           <Link to="/" className="flex items-center">
             <img 
               src={logo} 
-              alt="Upscale DigiTech Logo" 
-              className="h-8 sm:h-10 md:h-12 w-auto transition-all"
+              alt="Upscale DigiTech - Digital Marketing Agency" 
+              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto transition-all duration-300"
             />
           </Link>
 
