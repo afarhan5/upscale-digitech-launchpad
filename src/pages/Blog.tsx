@@ -17,6 +17,14 @@ const Blog = () => {
   
   const blogPosts = [
     {
+      title: "Email Marketing Best Practices for 2025",
+      excerpt: "Master email marketing with proven strategies to boost open rates, click-throughs, and conversions. Learn automation, personalization, and segmentation techniques.",
+      category: "Email Marketing",
+      date: "January 18, 2025",
+      readTime: "7 min read",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop",
+    },
+    {
       title: "Top 10 SEO Trends in 2025",
       excerpt: "Stay ahead of the competition with these essential SEO strategies for the new year. Learn about AI-powered search, voice optimization, and more.",
       category: "SEO",
@@ -64,9 +72,17 @@ const Blog = () => {
       readTime: "11 min read",
       image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&auto=format&fit=crop",
     },
+    {
+      title: "Building Effective Email Funnels",
+      excerpt: "Create high-converting email funnels that nurture leads and drive sales. Step-by-step guide with templates and automation strategies.",
+      category: "Email Marketing",
+      date: "January 1, 2025",
+      readTime: "9 min read",
+      image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=800&auto=format&fit=crop",
+    },
   ];
 
-  const categories = ["All", "SEO", "PPC", "Social Media", "Web Design", "Content Marketing"];
+  const categories = ["All", "SEO", "PPC", "Social Media", "Web Design", "Content Marketing", "Email Marketing"];
 
   return (
     <div className="min-h-screen">

@@ -18,6 +18,7 @@ import PPC from "./pages/services/PPC";
 import SocialMedia from "./pages/services/SocialMedia";
 import WebDevelopment from "./pages/services/WebDevelopment";
 import ContentBranding from "./pages/services/ContentBranding";
+import EmailMarketing from "./pages/services/EmailMarketing";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient({
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/services/social-media" element={<SocialMedia />} />
           <Route path="/services/web-development" element={<WebDevelopment />} />
           <Route path="/services/content-branding" element={<ContentBranding />} />
+          <Route path="/services/email-marketing" element={<EmailMarketing />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/blog" element={<Blog />} />
           

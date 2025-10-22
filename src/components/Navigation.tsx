@@ -40,7 +40,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="Upscale DigiTech Logo" 
-              className="h-12 w-auto"
+              className="h-8 sm:h-10 md:h-12 w-auto transition-all"
             />
           </Link>
 

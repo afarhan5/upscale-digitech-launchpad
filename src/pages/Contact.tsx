@@ -105,6 +105,7 @@ const Contact = () => {
                       <SelectItem value="social-media">Social Media Marketing</SelectItem>
                       <SelectItem value="web-dev">Web Development</SelectItem>
                       <SelectItem value="content">Content & Branding</SelectItem>
+                      <SelectItem value="email-marketing">Email Marketing</SelectItem>
                       <SelectItem value="all">All Services</SelectItem>
                     </SelectContent>
                   </Select>

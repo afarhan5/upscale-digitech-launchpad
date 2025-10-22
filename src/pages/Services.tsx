@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Search, MousePointer, Share2, Code, Megaphone, ArrowRight, Check } from "lucide-react";
+import { Search, MousePointer, Share2, Code, Megaphone, Mail, ArrowRight, Check } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
@@ -72,6 +72,19 @@ const Services = () => {
         "Brand guidelines",
       ],
     },
+    {
+      icon: Mail,
+      title: "Email Marketing",
+      description: "Drive conversions and build lasting customer relationships through strategic email campaigns. Our data-driven approach ensures maximum engagement and ROI.",
+      features: [
+        "Email campaign strategy",
+        "Newsletter design & creation",
+        "Automation & drip campaigns",
+        "List segmentation & targeting",
+        "A/B testing & optimization",
+        "Performance tracking & analytics",
+      ],
+    },
   ];
 
   return (
@@ -107,6 +120,7 @@ const Services = () => {
                     service.title === "PPC & Google Ads" ? "ppc" :
                     service.title === "Social Media Marketing" ? "social-media" :
                     service.title === "Website Development" ? "web-development" :
+                    service.title === "Email Marketing" ? "email-marketing" :
                     "content-branding"
                   }`}>
                     <Button size="lg" className="btn-gradient">

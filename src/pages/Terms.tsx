@@ -31,6 +31,7 @@ const Terms = () => {
                   <li>Social Media Marketing</li>
                   <li>Web Development</li>
                   <li>Content Creation and Branding</li>
+                  <li>Email Marketing</li>
                 </ul>
               </section>
 
@@ -132,7 +133,7 @@ const Terms = () => {
                 </p>
                 <div className="bg-secondary/30 rounded-xl p-6 mt-4">
                   <p className="font-semibold">Upscale DigiTech</p>
-                  <p className="text-muted-foreground">Email: info@upscaledigitech.com</p>
+                  <p className="text-muted-foreground">Email: hello@upscaledigitech.com</p>
                   <p className="text-muted-foreground">Phone: +91 9631881743</p>
                   <p className="text-muted-foreground">Address: Okhla NSIC, New Delhi, India</p>
                 </div>

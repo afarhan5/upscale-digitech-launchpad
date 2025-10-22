@@ -80,6 +80,81 @@ const CaseStudies = () => {
     duration: "8 months",
     testimonial: "They understood our brand perfectly and helped us reach audiences we never thought possible.",
     author: "Emma Williams, Founder"
+  }, {
+    company: "FitLife Wellness",
+    industry: "Health & Fitness",
+    challenge: "Poor email marketing performance with low open rates and minimal conversions from email campaigns.",
+    solution: "Implemented advanced email marketing automation, segmentation strategies, personalized content, and optimized email designs.",
+    results: [{
+      metric: "Open Rate",
+      increase: "275%",
+      icon: TrendingUp
+    }, {
+      metric: "Click Rate",
+      increase: "340%",
+      icon: BarChart
+    }, {
+      metric: "Email Revenue",
+      increase: "420%",
+      icon: DollarSign
+    }, {
+      metric: "Subscriber Growth",
+      increase: "190%",
+      icon: Users
+    }],
+    duration: "5 months",
+    testimonial: "Email marketing was dead for us until Upscale DigiTech completely transformed our strategy. Incredible results!",
+    author: "Michael Chen, Marketing Manager"
+  }, {
+    company: "HomeDecor Plus",
+    industry: "Interior Design",
+    challenge: "Struggling to compete with larger brands and generate consistent online sales in a competitive market.",
+    solution: "Created an integrated digital strategy combining SEO, content marketing, social media, and targeted PPC campaigns.",
+    results: [{
+      metric: "Organic Rankings",
+      increase: "320%",
+      icon: TrendingUp
+    }, {
+      metric: "Website Visitors",
+      increase: "410%",
+      icon: Users
+    }, {
+      metric: "Online Orders",
+      increase: "380%",
+      icon: DollarSign
+    }, {
+      metric: "Brand Awareness",
+      increase: "290%",
+      icon: BarChart
+    }],
+    duration: "7 months",
+    testimonial: "From a small local shop to competing with major brands online - this team made it happen!",
+    author: "Sarah Johnson, Owner"
+  }, {
+    company: "TechSupport Pro",
+    industry: "IT Services",
+    challenge: "Low website visibility and difficulty generating qualified leads in the B2B technology space.",
+    solution: "Implemented comprehensive B2B SEO strategy, LinkedIn marketing, and content marketing focused on technical decision-makers.",
+    results: [{
+      metric: "B2B Leads",
+      increase: "350%",
+      icon: Users
+    }, {
+      metric: "Search Traffic",
+      increase: "280%",
+      icon: TrendingUp
+    }, {
+      metric: "Sales Pipeline",
+      increase: "440%",
+      icon: DollarSign
+    }, {
+      metric: "Domain Authority",
+      increase: "160%",
+      icon: BarChart
+    }],
+    duration: "6 months",
+    testimonial: "Finally, a marketing team that understands B2B tech. Our lead quality and quantity have never been better.",
+    author: "David Kumar, CEO"
   }];
   return <div className="min-h-screen">
       <Navigation />

@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="Upscale DigiTech Logo" 
-                className="h-10 w-auto"
+                className="h-8 sm:h-10 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-4">
@@ -55,6 +55,7 @@ const Footer = () => {
               <li><Link to="/services/social-media" className="text-gray-400 hover:text-primary transition-colors">Social Media Marketing</Link></li>
               <li><Link to="/services/web-development" className="text-gray-400 hover:text-primary transition-colors">Web Development</Link></li>
               <li><Link to="/services/content-branding" className="text-gray-400 hover:text-primary transition-colors">Content & Branding</Link></li>
+              <li><Link to="/services/email-marketing" className="text-gray-400 hover:text-primary transition-colors">Email Marketing</Link></li>
             </ul>
           </div>
 
@@ -68,7 +69,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <Mail size={18} className="text-primary mt-1 flex-shrink-0" />
-                <a href="mailto:info@upscaledigitech.com" className="text-gray-400 hover:text-primary transition-colors">hello@upscaledigitech.com</a>
+                <a href="mailto:hello@upscaledigitech.com" className="text-gray-400 hover:text-primary transition-colors">hello@upscaledigitech.com</a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-primary mt-1 flex-shrink-0" />
