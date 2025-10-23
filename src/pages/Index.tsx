@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingUp, Award, Clock, HeadphonesIcon, Search, MousePointer, Share2, Code, Megaphone } from "lucide-react";
+import { ArrowRight, TrendingUp, Award, Clock, HeadphonesIcon, Search, MousePointer, Share2, Code, Megaphone, Mail } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
@@ -47,6 +47,11 @@ const Index = () => {
       icon: Megaphone,
       title: "Content & Branding",
       description: "Tell your story with compelling content. Build a brand that resonates and drives customer loyalty.",
+    },
+    {
+      icon: Mail,
+      title: "Email Marketing",
+      description: "Drive conversions with targeted email campaigns. Personalized messages that nurture leads and boost sales.",
     },
   ];
 
