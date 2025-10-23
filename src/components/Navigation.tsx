@@ -34,7 +34,7 @@ const Navigation = () => {
         isScrolled ? "bg-white shadow-lg py-1.5 sm:py-2" : "bg-white/95 backdrop-blur-sm py-2 sm:py-4"
       }`}
     >
-      <div className="container mx-auto px-3 sm:px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center flex-shrink-0">
             <img 
@@ -78,7 +78,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden mt-3 pb-3 animate-fade-in border-t border-gray-200 pt-3">
+          <div className="lg:hidden mt-3 pb-3 animate-fade-in border-t border-gray-200 pt-3 -mx-4 px-4 sm:-mx-6 sm:px-6">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -93,7 +93,7 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Link to="/contact" onClick={() => setIsOpen(false)}>
+            <Link to="/contact" onClick={() => setIsOpen(false)} className="block">
               <Button size="sm" className="btn-gradient w-full mt-3">
                 Get Free Consultation
               </Button>
