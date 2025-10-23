@@ -31,15 +31,15 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg py-1.5 sm:py-2" : "bg-white/95 backdrop-blur-sm py-2 sm:py-4"
+        isScrolled ? "bg-white shadow-lg py-1.5 sm:py-2" : "bg-transparent py-2 sm:py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center flex-shrink-0">
-            <img 
-              src={logo} 
-              alt="Upscale DigiTech - Digital Marketing Agency" 
+            <img
+              src={logo}
+              alt="Upscale DigiTech - Digital Marketing Agency"
               className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto transition-all duration-300"
             />
           </Link>
@@ -68,7 +68,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-foreground p-2 -mr-2 flex-shrink-0"
+            className="lg:hidden text-foreground p-2 mr-0 flex-shrink-0"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -78,7 +78,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden mt-3 pb-3 animate-fade-in border-t border-gray-200 pt-3 -mx-4 px-4 sm:-mx-6 sm:px-6">
+          <div className="lg:hidden mt-3 pb-3 animate-fade-in border-t border-gray-200 pt-3 px-4 sm:px-6">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
