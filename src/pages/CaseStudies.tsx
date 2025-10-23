@@ -237,14 +237,10 @@ const CaseStudies = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">Overall Performance</h2>
             <p className="text-xl text-muted-foreground">Combined results across all our clients</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <p className="text-5xl font-bold text-gradient mb-2">500+</p>
+              <p className="text-5xl font-bold text-gradient mb-2">250+</p>
               <p className="text-muted-foreground">Successful Projects</p>
-            </div>
-            <div className="text-center">
-              <p className="text-5xl font-bold text-gradient mb-2">$50M+</p>
-              <p className="text-muted-foreground">Revenue Generated</p>
             </div>
             <div className="text-center">
               <p className="text-5xl font-bold text-gradient mb-2">98%</p>

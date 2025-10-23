@@ -74,6 +74,24 @@ const Index = () => {
       text: "From website design to social media, they delivered excellence. Our sales have doubled since partnering with them.",
       rating: 5,
     },
+    {
+      name: "Michael Chen",
+      company: "FitLife Wellness",
+      text: "Email marketing was dead for us until Upscale DigiTech completely transformed our strategy. Incredible results!",
+      rating: 5,
+    },
+    {
+      name: "Sarah Johnson",
+      company: "HomeDecor Plus",
+      text: "From a small local shop to competing with major brands online - this team made it happen!",
+      rating: 5,
+    },
+    {
+      name: "David Kumar",
+      company: "TechSupport Pro",
+      text: "Finally, a marketing team that understands B2B tech. Our lead quality and quantity have never been better.",
+      rating: 5,
+    },
   ];
 
   const benefits = [
