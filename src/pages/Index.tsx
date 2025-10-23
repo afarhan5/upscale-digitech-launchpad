@@ -106,7 +106,7 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="hero-section relative pt-32 pb-20 overflow-hidden">
         <div 
           className="absolute inset-0 z-0"
           style={{
@@ -123,15 +123,15 @@ const Index = () => {
             <p className="text-xl md:text-2xl mb-8 text-white/90 animate-fade-in">
               We are a results-driven Digital Marketing Agency specializing in SEO, PPC, Social Media, and Web Development.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-              <Link to="/contact">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+            <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+              <Link to="/contact" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full bg-white text-primary hover:bg-white/90 text-lg px-8">
                   Get Free Consultation
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
-              <Link to="/services">
-                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary text-lg px-8">
+              <Link to="/services" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary text-lg px-8">
                   See Our Services
                 </Button>
               </Link>
