@@ -106,20 +106,68 @@ All colors MUST be HSL.
 }
 
 @layer base {
+  html {
+    font-size: 100%;
+  }
+
   * {
     @apply border-border;
   }
 
   body {
     @apply bg-background text-foreground font-sans;
+    margin: 0;
+    padding: 0;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 3.5rem);
+    line-height: 1.2;
     @apply font-poppins;
+  }
+  
+  h2 {
+    font-size: clamp(1.4rem, 4.5vw, 2.5rem);
+    line-height: 1.3;
+    @apply font-poppins;
+  }
+  
+  h3 {
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
+    line-height: 1.3;
+    @apply font-poppins;
+  }
+  
+  h4, h5, h6 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    line-height: 1.4;
+    @apply font-poppins;
+  }
+  
+  p, li, button, a {
+    font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  section {
+    padding: clamp(2rem, 6vw, 6rem) 0;
   }
 }
 
 @layer utilities {
+  /* Global Container */
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Gradient Utilities */
   .text-gradient {
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-primary);
@@ -136,5 +184,71 @@ All colors MUST be HSL.
   
   .section-gradient {
     background-image: var(--gradient-hero);
+  }
+  
+  /* Hero Section Responsive */
+  .hero-section {
+    text-align: center;
+    padding: clamp(2rem, 6vw, 6rem) 1rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero-buttons a,
+  .hero-buttons button {
+    flex: 1 1 auto;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  /* Flex Sections */
+  .flex-section {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .flex-item {
+    flex: 1 1 300px;
+  }
+  
+  /* Responsive Grid */
+  .responsive-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  /* Navbar Responsive */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.2rem;
+  }
+  
+  @media(max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  @media(min-width: 769px) {
+    .mobile-menu {
+      display: none;
+    }
   }
 }
