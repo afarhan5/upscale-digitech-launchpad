@@ -19,16 +19,16 @@ const Footer = () => {
               Results-driven Digital Marketing Agency specializing in SEO, PPC, Social Media, and Web Development.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61582684476323" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+              <a href="https://x.com/upscaledigitech" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/company/upscaledigitech/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/upscale_digitech/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <Mail size={18} className="text-primary mt-1 flex-shrink-0" />
-                <a href="mailto:hello@upscaledigitech.com" className="text-gray-400 hover:text-primary transition-colors">hello@upscaledigitech.com</a>
+                <a href="mailto:info@upscaledigitech.com" className="text-gray-400 hover:text-primary transition-colors">info@upscaledigitech.com</a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-primary mt-1 flex-shrink-0" />
