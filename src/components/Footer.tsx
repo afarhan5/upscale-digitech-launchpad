@@ -19,16 +19,40 @@ const Footer = () => {
               Results-driven Digital Marketing Agency specializing in SEO, PPC, Social Media, and Web Development.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61582684476323" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61582684476323" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
+                aria-label="Visit our Facebook page"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="https://x.com/upscaledigitech" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+              <a 
+                href="https://x.com/upscaledigitech" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
+                aria-label="Visit our X (Twitter) page"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="https://www.linkedin.com/company/upscaledigitech/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/upscaledigitech/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
+                aria-label="Visit our LinkedIn page"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="https://www.instagram.com/upscale_digitech/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+              <a 
+                href="https://www.instagram.com/upscale_digitech/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-primary transition-colors cursor-pointer"
+                aria-label="Visit our Instagram page"
+              >
                 <Instagram size={20} />
               </a>
             </div>
