@@ -118,7 +118,7 @@ const About = () => {
               <p className="text-muted-foreground">Team Members</p>
             </div>
             <div className="text-center">
-              <p className="text-5xl font-bold text-gradient mb-2">5</p>
+              <p className="text-5xl font-bold text-gradient mb-2">5+</p>
               <p className="text-muted-foreground">Years Experience</p>
             </div>
           </div>
