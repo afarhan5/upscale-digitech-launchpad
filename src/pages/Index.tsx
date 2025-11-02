@@ -106,7 +106,7 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-20 pb-20 overflow-hidden">
         <div 
           className="absolute inset-0 z-0"
           style={{
