@@ -181,7 +181,7 @@ const Contact = () => {
               <div className="bg-secondary/30 rounded-2xl p-6 mb-8">
                 <h3 className="text-xl font-semibold mb-4 font-poppins">Office Hours</h3>
                 <div className="space-y-2 text-muted-foreground">
-                  <p><span className="font-medium text-foreground">Monday - Friday:</span> 9:00 AM - 6:00 PM</p>
+                  <p><span className="font-medium text-foreground">Monday - Friday:</span> 10:00 AM - 6:00 PM</p>
                   <p><span className="font-medium text-foreground">Saturday:</span> 10:00 AM - 4:00 PM</p>
                   <p><span className="font-medium text-foreground">Sunday:</span> Closed</p>
                 </div>
