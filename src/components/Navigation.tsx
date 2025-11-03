@@ -30,17 +30,17 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg py-1.5 sm:py-2" : "bg-white/95 backdrop-blur-sm py-2 sm:py-4"
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-lg py-2" : "bg-white/95 backdrop-blur-sm py-3"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           <Link to="/" className="flex items-center flex-shrink-0">
             <img 
               src={logo} 
               alt="Upscale DigiTech - Digital Marketing Agency" 
-              className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto transition-all duration-300"
+              className="h-8 sm:h-10 md:h-11 lg:h-12 w-auto transition-all duration-300"
             />
           </Link>
 
