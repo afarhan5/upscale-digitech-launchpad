@@ -106,7 +106,7 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div 
           className="absolute inset-0 z-0"
           style={{
@@ -115,23 +115,23 @@ const Index = () => {
             backgroundPosition: 'center',
           }}
         />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-5xl mx-auto text-center text-white">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 font-poppins animate-fade-in leading-tight">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 sm:py-16 md:py-20">
+          <div className="max-w-5xl mx-auto text-center text-white flex flex-col items-center justify-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-5 md:mb-6 font-poppins animate-fade-in leading-tight">
               Grow Your Business with Upscale DigiTech
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 animate-fade-in max-w-3xl mx-auto px-4">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-7 md:mb-8 text-white/90 animate-fade-in max-w-3xl mx-auto px-2 sm:px-4">
               We are a results-driven Digital Marketing Agency specializing in SEO, PPC, Social Media, and Web Development.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in max-w-2xl mx-auto px-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center animate-fade-in w-full sm:w-auto max-w-2xl px-4 sm:px-0">
               <Link to="/contact" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-base md:text-lg px-6 md:px-8 w-full sm:w-auto whitespace-nowrap">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-base md:text-lg px-6 md:px-8 w-full sm:w-auto whitespace-nowrap h-12 sm:h-auto">
                   Get Free Consultation
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
               <Link to="/services" className="w-full sm:w-auto">
-                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary text-base md:text-lg px-6 md:px-8 w-full sm:w-auto whitespace-nowrap">
+                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary text-base md:text-lg px-6 md:px-8 w-full sm:w-auto whitespace-nowrap h-12 sm:h-auto">
                   See Our Services
                 </Button>
               </Link>
