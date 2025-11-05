@@ -23,6 +23,77 @@ const Blog = () => {
       date: "January 18, 2025",
       readTime: "7 min read",
       image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop",
+      content: `
+        <h2>Introduction</h2>
+        <p>Email marketing remains one of the most effective digital marketing channels, with an average ROI of $42 for every $1 spent. In 2025, success requires more than just sending mass emails—it demands strategic planning, personalization, and data-driven optimization.</p>
+        
+        <h2>1. Build a Quality Email List</h2>
+        <p>Your email list is your most valuable asset. Focus on organic growth through:</p>
+        <ul>
+          <li><strong>Lead magnets:</strong> Offer valuable resources like ebooks, templates, or exclusive content</li>
+          <li><strong>Website signup forms:</strong> Place strategic opt-in forms on high-traffic pages</li>
+          <li><strong>Social media:</strong> Promote your newsletter across all platforms</li>
+          <li><strong>Exit-intent popups:</strong> Capture visitors before they leave your site</li>
+        </ul>
+        
+        <h2>2. Segment Your Audience</h2>
+        <p>Generic emails don't work anymore. Segment your list based on:</p>
+        <ul>
+          <li>Demographics (age, location, industry)</li>
+          <li>Behavior (purchase history, website activity)</li>
+          <li>Engagement level (active vs. inactive subscribers)</li>
+          <li>Customer lifecycle stage (new leads, customers, advocates)</li>
+        </ul>
+        
+        <h2>3. Personalization Beyond First Names</h2>
+        <p>Modern personalization goes deeper:</p>
+        <ul>
+          <li>Dynamic content based on user preferences</li>
+          <li>Product recommendations using AI</li>
+          <li>Personalized send times for each subscriber</li>
+          <li>Behavior-triggered emails (cart abandonment, browse abandonment)</li>
+        </ul>
+        
+        <h2>4. Optimize Subject Lines</h2>
+        <p>Your subject line determines if your email gets opened. Best practices:</p>
+        <ul>
+          <li>Keep it under 50 characters</li>
+          <li>Create urgency without being spammy</li>
+          <li>Use emojis strategically (test first)</li>
+          <li>A/B test different approaches</li>
+          <li>Avoid spam trigger words</li>
+        </ul>
+        
+        <h2>5. Mobile-First Design</h2>
+        <p>Over 60% of emails are opened on mobile devices. Ensure:</p>
+        <ul>
+          <li>Responsive design that adapts to all screen sizes</li>
+          <li>Large, tappable buttons (at least 44x44 pixels)</li>
+          <li>Concise content that's easy to scan</li>
+          <li>Fast-loading images</li>
+        </ul>
+        
+        <h2>6. Automation Sequences</h2>
+        <p>Set up automated workflows for:</p>
+        <ul>
+          <li><strong>Welcome series:</strong> Introduce new subscribers to your brand</li>
+          <li><strong>Nurture campaigns:</strong> Guide leads through the sales funnel</li>
+          <li><strong>Re-engagement:</strong> Win back inactive subscribers</li>
+          <li><strong>Post-purchase:</strong> Drive repeat purchases and reviews</li>
+        </ul>
+        
+        <h2>7. Test and Optimize</h2>
+        <p>Continuously improve through testing:</p>
+        <ul>
+          <li>A/B test subject lines, content, and CTAs</li>
+          <li>Analyze open rates, click rates, and conversions</li>
+          <li>Test send times and frequency</li>
+          <li>Monitor deliverability and spam complaints</li>
+        </ul>
+        
+        <h2>Conclusion</h2>
+        <p>Email marketing in 2025 is about delivering value, building relationships, and respecting your subscribers' time. Focus on quality over quantity, personalization over mass messaging, and always provide an easy opt-out option. By following these best practices, you'll build a loyal subscriber base that drives consistent revenue for your business.</p>
+      `
     },
     {
       title: "Top 10 SEO Trends in 2025",
@@ -31,6 +102,103 @@ const Blog = () => {
       date: "January 15, 2025",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+      content: `
+        <h2>Introduction</h2>
+        <p>The SEO landscape continues to evolve rapidly. Staying ahead means understanding emerging trends and adapting your strategy accordingly. Here are the top 10 SEO trends shaping 2025.</p>
+        
+        <h2>1. AI-Powered Search Results</h2>
+        <p>AI is transforming how search engines deliver results. Google's Search Generative Experience (SGE) now provides AI-generated summaries at the top of search results. To adapt:</p>
+        <ul>
+          <li>Create comprehensive, authoritative content</li>
+          <li>Focus on answering questions directly</li>
+          <li>Use structured data to help AI understand your content</li>
+          <li>Build brand authority and trust signals</li>
+        </ul>
+        
+        <h2>2. Voice Search Optimization</h2>
+        <p>With 50% of searches now voice-based, optimization strategies must shift:</p>
+        <ul>
+          <li>Target conversational, long-tail keywords</li>
+          <li>Optimize for question-based queries</li>
+          <li>Ensure fast page load times</li>
+          <li>Claim and optimize your Google Business Profile</li>
+        </ul>
+        
+        <h2>3. Core Web Vitals & Page Experience</h2>
+        <p>User experience metrics continue to impact rankings:</p>
+        <ul>
+          <li><strong>LCP (Largest Contentful Paint):</strong> Under 2.5 seconds</li>
+          <li><strong>FID (First Input Delay):</strong> Under 100ms</li>
+          <li><strong>CLS (Cumulative Layout Shift):</strong> Under 0.1</li>
+          <li>Mobile-friendly design is non-negotiable</li>
+        </ul>
+        
+        <h2>4. E-E-A-T: Experience, Expertise, Authoritativeness, Trustworthiness</h2>
+        <p>Google added "Experience" to E-A-T in 2024. Demonstrate it through:</p>
+        <ul>
+          <li>Author bios highlighting real expertise</li>
+          <li>Case studies and real-world examples</li>
+          <li>Customer testimonials and reviews</li>
+          <li>Third-party mentions and backlinks</li>
+        </ul>
+        
+        <h2>5. Video SEO</h2>
+        <p>Video content dominates search results:</p>
+        <ul>
+          <li>Optimize YouTube videos for search</li>
+          <li>Add video transcripts to your website</li>
+          <li>Use video schema markup</li>
+          <li>Create video thumbnails that attract clicks</li>
+        </ul>
+        
+        <h2>6. Local SEO Domination</h2>
+        <p>Local searches drive immediate action:</p>
+        <ul>
+          <li>Complete and optimize your Google Business Profile</li>
+          <li>Collect and respond to reviews</li>
+          <li>Create location-specific content</li>
+          <li>Build local citations and backlinks</li>
+        </ul>
+        
+        <h2>7. Semantic Search & Topic Clusters</h2>
+        <p>Search engines understand context, not just keywords:</p>
+        <ul>
+          <li>Create comprehensive pillar pages</li>
+          <li>Develop cluster content around core topics</li>
+          <li>Use internal linking strategically</li>
+          <li>Focus on search intent, not just keywords</li>
+        </ul>
+        
+        <h2>8. Zero-Click Searches</h2>
+        <p>More searches end without clicking a result:</p>
+        <ul>
+          <li>Target featured snippets</li>
+          <li>Optimize for knowledge panels</li>
+          <li>Use structured data markup</li>
+          <li>Build brand awareness for direct searches</li>
+        </ul>
+        
+        <h2>9. Privacy-First SEO</h2>
+        <p>With cookie deprecation and privacy regulations:</p>
+        <ul>
+          <li>Focus on first-party data collection</li>
+          <li>Build direct relationships with your audience</li>
+          <li>Use privacy-compliant analytics tools</li>
+          <li>Prioritize email list building</li>
+        </ul>
+        
+        <h2>10. Content Quality Over Quantity</h2>
+        <p>Google's helpful content updates prioritize quality:</p>
+        <ul>
+          <li>Create content for humans, not search engines</li>
+          <li>Demonstrate first-hand experience</li>
+          <li>Update and improve existing content</li>
+          <li>Remove or consolidate thin content</li>
+        </ul>
+        
+        <h2>Conclusion</h2>
+        <p>SEO in 2025 requires a holistic approach that balances technical optimization, quality content, user experience, and brand building. Focus on creating genuine value for users, and the rankings will follow. Stay adaptable and keep testing new strategies as search engines continue to evolve.</p>
+      `
     },
     {
       title: "How to Run Profitable Google Ads Campaigns",
@@ -247,22 +415,10 @@ const Blog = () => {
                     {selectedPost.readTime}
                   </div>
                 </div>
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    {selectedPost.excerpt}
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mt-4">
-                    This is where the full blog post content would appear. In a complete implementation, 
-                    you would have the full article content stored in your data structure and rendered here. 
-                    You can include headings, paragraphs, images, code blocks, and other rich content to 
-                    provide value to your readers.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mt-4">
-                    For now, this serves as a placeholder to demonstrate the expandable blog post functionality. 
-                    Each blog post can have its own unique content, formatting, and media to engage your audience 
-                    and establish your authority in digital marketing.
-                  </p>
-                </div>
+                <div 
+                  className="prose prose-lg max-w-none" 
+                  dangerouslySetInnerHTML={{ __html: selectedPost.content || selectedPost.excerpt }}
+                />
               </div>
             </>
           )}
