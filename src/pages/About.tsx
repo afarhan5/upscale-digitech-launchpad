@@ -44,7 +44,7 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6 font-poppins">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-4">Founded in 2020, Upscale DigiTech began with a simple mission: to help businesses thrive in the digital age. What started as a small team of passionate marketers has grown into a full-service digital marketing agency serving clients worldwide.</p>
-              <p className="text-lg text-muted-foreground mb-4">With over 5 years of experience, we've helped hundreds of businesses achieve their online goals through innovative strategies and data-driven campaigns. Our team of certified experts specializes in SEO, PPC, social media marketing, web development, and content creation.</p>
+              <p className="text-lg text-muted-foreground mb-4">With 5+ years of experience, we've helped hundreds of businesses achieve their online goals through innovative strategies and data-driven campaigns. Our team of certified experts specializes in SEO, PPC, social media marketing, web development, and content creation.</p>
               <p className="text-lg text-muted-foreground mb-6">
                 We believe in building lasting relationships with our clients, understanding their unique challenges, and delivering customized solutions that drive real results. Every strategy we create is backed by research, analytics, and a commitment to excellence.
               </p>
