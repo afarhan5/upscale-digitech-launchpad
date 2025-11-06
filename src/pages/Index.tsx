@@ -102,7 +102,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Navigation />
       
       {/* Hero Section */}
@@ -115,23 +115,23 @@ const Index = () => {
             backgroundPosition: 'center',
           }}
         />
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-full">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-poppins animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-poppins animate-fade-in leading-tight">
               Grow Your Business with Upscale DigiTech
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 animate-fade-in">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/90 animate-fade-in px-4">
               We are a results-driven Digital Marketing Agency specializing in SEO, PPC, Social Media, and Web Development.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-              <Link to="/contact">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in px-4">
+              <Link to="/contact" className="w-full sm:w-auto">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                   Get Free Consultation
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
-              <Link to="/services">
-                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary text-lg px-8">
+              <Link to="/services" className="w-full sm:w-auto">
+                <Button size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                   See Our Services
                 </Button>
               </Link>
@@ -142,8 +142,8 @@ const Index = () => {
 
       {/* Why Choose Us */}
       <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16 px-4">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">Why Choose Us?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We deliver measurable results that drive real business growth
@@ -151,7 +151,7 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="text-center animate-fade-in">
+              <div key={index} className="text-center animate-fade-in px-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <benefit.icon className="text-white" size={32} />
                 </div>
@@ -165,8 +165,8 @@ const Index = () => {
 
       {/* Services Preview */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16 px-4">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">Our Core Services</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Comprehensive digital marketing solutions tailored to your business needs
@@ -189,15 +189,15 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-secondary/30 overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">Client Success Stories</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Don't just take our word for it - hear from our satisfied clients
             </p>
           </div>
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-5xl mx-auto px-2 sm:px-4">
             <Carousel
               opts={{
                 align: "start",
@@ -206,17 +206,19 @@ const Index = () => {
               plugins={[autoplayPlugin.current]}
               className="w-full"
             >
-              <CarouselContent>
+              <CarouselContent className="-ml-2 md:-ml-4">
                 {testimonials.map((testimonial, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-2">
+                  <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                    <div className="p-1">
                       <TestimonialCard {...testimonial} />
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <div className="hidden sm:block">
+                <CarouselPrevious />
+                <CarouselNext />
+              </div>
             </Carousel>
           </div>
         </div>
@@ -225,15 +227,15 @@ const Index = () => {
 
       {/* Final CTA */}
       <section className="py-20 section-gradient text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-poppins">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-poppins px-4">
             Ready to Dominate Online?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto px-4">
             Let's transform your digital presence and drive real results. Get your free consultation today!
           </p>
           <Link to="/contact">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-base sm:text-lg px-6 sm:px-8">
               Contact Us Today
               <ArrowRight className="ml-2" size={20} />
             </Button>
