@@ -137,4 +137,41 @@ All colors MUST be HSL.
   .section-gradient {
     background-image: var(--gradient-hero);
   }
+  
+  /* Blog Content Styles */
+  .blog-content h2 {
+    @apply text-3xl font-bold font-poppins mt-8 mb-4;
+  }
+  
+  .blog-content h3 {
+    @apply text-2xl font-semibold font-poppins mt-6 mb-3;
+  }
+  
+  .blog-content p {
+    @apply text-base leading-relaxed mb-4;
+  }
+  
+  .blog-content ul, .blog-content ol {
+    @apply mb-6 ml-6 space-y-2;
+  }
+  
+  .blog-content li {
+    @apply text-base leading-relaxed;
+  }
+  
+  .blog-content strong {
+    @apply font-semibold text-foreground;
+  }
+  
+  .blog-content ul li {
+    @apply list-disc;
+  }
+  
+  .blog-content ol li {
+    @apply list-decimal;
+  }
+  
+  .blog-content h2:first-child {
+    @apply mt-0;
+  }
 }

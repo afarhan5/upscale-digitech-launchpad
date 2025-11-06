@@ -15,6 +15,7 @@ import {
 const Blog = () => {
   const [selectedPost, setSelectedPost] = useState<typeof blogPosts[0] | null>(null);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
   
   const blogPosts = [
     {
@@ -873,8 +874,19 @@ const Blog = () => {
               <input
                 type="text"
                 placeholder="Search articles..."
-                className="w-full pl-12 pr-4 py-3 rounded-full border border-border focus:outline-none focus:ring-2 focus:ring-primary"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-12 pr-4 py-3 rounded-full border border-border focus:outline-none focus:ring-2 focus:ring-primary bg-background"
               />
+              {searchTerm && (
+                <button
+                  onClick={() => setSearchTerm("")}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-muted-foreground hover:text-foreground"
+                  aria-label="Clear search"
+                >
+                  <X size={20} />
+                </button>
+              )}
             </div>
           </div>
 
@@ -900,6 +912,12 @@ const Blog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts
               .filter(post => selectedCategory === "All" || post.category === selectedCategory)
+              .filter(post => 
+                searchTerm === "" || 
+                post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                post.category.toLowerCase().includes(searchTerm.toLowerCase())
+              )
               .map((post, index) => (
               <Card key={index} className="border-0 shadow-lg card-hover overflow-hidden">
                 <img
@@ -1021,7 +1039,7 @@ const Blog = () => {
                   </div>
                 </div>
                 <div 
-                  className="prose prose-lg max-w-none" 
+                  className="blog-content prose prose-lg max-w-none" 
                   dangerouslySetInnerHTML={{ __html: selectedPost.content || selectedPost.excerpt }}
                 />
               </div>
