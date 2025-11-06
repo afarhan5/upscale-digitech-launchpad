@@ -862,7 +862,7 @@ const Blog = () => {
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-8">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 font-poppins">Digital Marketing Blog</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 font-poppins">Blogs</h1>
             <p className="text-xl text-muted-foreground mb-8">
               Expert insights, tips, and strategies to help your business grow online
             </p>
